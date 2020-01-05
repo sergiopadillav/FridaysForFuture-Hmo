@@ -114,15 +114,15 @@ text-decoration: none;
 
 @media screen and (max-width: 443px) {
   .title {
-    font-size: 38px;
+    font-size: 30px;
   }
 
   .bienvenidos {
-    font-size: 25px;
+    font-size: 20px;
   }
 
   .btn-qs {
-    font-size: 18px;
+    font-size: 13px;
   }
 }
 /*-------------------------- FIN HEADER --------------------------*/

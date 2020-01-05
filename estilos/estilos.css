@@ -1,0 +1,325 @@
+/* ESTILOS GENERALES */
+.font-Raleway {
+  font-family: "Raleway", sans-serif;
+}
+
+.generic-description {
+  font-size: 20px;
+}
+
+.title-with-line {
+  font-size: 45px;
+  display: inline-block;
+  position: relative;
+}
+
+.title-with-line::after {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 5px;
+  background-color: rgb(20, 116, 68);
+  top: 2.5em;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+.btn-mine {
+  color: white;
+  border: 3px solid rgb(20, 116, 68);
+  background: none;
+  border-radius: 50px;
+  transition: 0.5s;
+  padding: 10px 25px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.btn-mine:hover {
+  background: rgb(20, 116, 68);
+  color: white;
+text-decoration: none;
+}
+
+.tittle-between-lines::after,
+.tittle-between-lines::before {
+  content: "";
+  position: absolute;
+  width: 120px;
+  height: 3px;
+  background-color: rgb(20, 116, 68);
+  top: 0.6em;
+}
+
+.tittle-between-lines::before {
+  left: -140px;
+}
+
+.tittle-between-lines::after {
+  right: -140px;
+}
+
+@media screen and (max-width: 417px) {
+  .title-with-line::after {
+    top: 4em;
+  }
+}
+
+@media screen and (max-width: 443px) {
+  .tittle-between-lines::after,
+  .tittle-between-lines::before {
+    width: 75px;
+  }
+
+  .tittle-between-lines::before {
+    left: -90px;
+  }
+
+  .tittle-between-lines::after {
+    right: -90px;
+  }
+}
+
+/*-------------------------- HEADER --------------------------*/
+
+.header {
+  height: 80vh;
+}
+
+.header-main {
+  background-image: url("../img/friday-for-future.jpg");
+  height: 100vh;
+  background-size: cover;
+}
+
+.background-overlay {
+  background: rgb(36, 51, 50, 0.8);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.bienvenidos {
+  font-size: 25px;
+  position: relative;
+  display: inline-block;
+  font-family: "Raleway", sans-serif;
+}
+
+.title-header {
+  font-size: 60px;
+}
+
+@media screen and (max-width: 443px) {
+  .title {
+    font-size: 38px;
+  }
+
+  .bienvenidos {
+    font-size: 25px;
+  }
+
+  .btn-qs {
+    font-size: 18px;
+  }
+}
+/*-------------------------- FIN HEADER --------------------------*/
+
+
+/*-------------------------- OBJETIVOS --------------------------*/
+.img-concientizar {
+  height: 90px;
+  position: absolute;
+  margin-right: -50%;
+  transform: translate(-50%, -73%);
+}
+
+.card-objetivos{
+    height: 310px;
+}
+/*--------------------------FIN OBJETIVOS --------------------------*/
+
+/*--------------------------INICIO QUOTES --------------------------*/
+.quotes-section {
+  background-image: url("../img/quotes.jpg");
+  background-size: cover;
+  height: 65vh;
+}
+
+.quotes-overlay {
+  background: rgb(36, 51, 50, 0.8);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.quotes-n-author {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.quote-author {
+  position: absolute;
+  bottom: 0px;
+  right: 20px;
+  font-size: 30px;
+}
+
+.quote {
+  font-family: "Bad Script", cursive;
+  text-align: right;
+  margin: 25px;
+  font-size: 40px;
+}
+
+.comillas-overlay {
+  position: relative;
+}
+
+.quotes-comillas {
+  height: 150px;
+  top: -100px;
+  left: 10px;
+  position: absolute;
+}
+/*--------------------------FIN QUOTES --------------------------*/
+
+.img-porque-manifestarse{
+    height: 500px;
+    margin-left: 100px;
+}
+
+/*--------------------------INICIO ACTIVIDADES --------------------------*/
+.box {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  background: #000;
+  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.5);
+}
+
+.box .imgBx {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.box .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s;
+}
+
+.box:hover .imgBx img {
+  opacity: 0;
+}
+
+.box .content {
+  position: absolute;
+  bottom: 20px;
+  left: 10%;
+  width: 80%;
+  height: 60px;
+  background: #fff;
+  transition: 0.5s;
+  overflow: hidden;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.box:hover .content {
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+}
+
+.box .content h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+}
+
+.box .content p {
+  opacity: 0;
+  line-height: 1.2em;
+  transition: 0.2s;
+  text-align: left;
+}
+
+.box:hover .content p {
+  opacity: 1;
+  transition-delay: 0.5s;
+}
+
+.title-activiti {
+  margin: 0;
+  font-size: 13px;
+  color: rgb(112, 112, 112);
+}
+
+.date-activiti {
+  color: rgb(38, 56, 68);
+}
+/*--------------------------FIN ACTIVIDADES --------------------------*/
+
+
+/* -------------------FOOTER------------------- */
+
+    .footer{
+    background-color: rgb(3, 9, 25);
+    font-size: 16px;
+   }
+
+   ul{
+       list-style: none;
+       cursor: pointer;
+   }
+   
+   .fa-angle-right{
+    color: rgb(20, 116, 68);
+   }
+   
+   .color-links-footer {
+     color: rgb(255, 255, 255)
+   }
+   
+   .social-links a {
+     background-color: #222636;
+     border-radius: 50px;
+     display: inline-block;
+     padding: 8px 0;
+     margin-right: 4px;
+     width: 39px;
+     height: 39px;
+     text-align: center;
+     transition: 0.3s;
+   }
+   
+   .social-links a:hover {
+     background-color: rgb(20, 116, 68);
+   }
+   
+   .line-footer{
+     position: relative;
+   }
+   
+   .line-footer:before{
+     content:"";
+     position: absolute;
+     width: 100%;
+     height: 3px;
+     background-color: rgb(20, 116, 68);
+     top: 2em;
+   }
+   
